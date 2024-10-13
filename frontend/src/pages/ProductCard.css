@@ -1,0 +1,94 @@
+/* Container for displaying product cards in a horizontal layout with gaps */
+.products-grid {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping to the next line if needed */
+  justify-content: center; /* Centers items horizontally */
+  gap: 20px; /* Gap between each card */
+  padding: 20px;
+}
+
+/* Individual product card styling */
+.product-card {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 300px; /* Adjust width as needed */
+  text-align: center;
+  position: relative;
+  transform: scale(1); /* Ensure card is initially scaled normally */
+}
+
+/* Image styling */
+.product-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Title styling */
+.product-card h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+/* Description styling */
+.product-card p {
+  margin: 5px 0;
+  color: #666;
+}
+
+/* Rating styling */
+.product-rating {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #f39c12;
+}
+
+/* Price styling */
+.product-price {
+  margin: 10px 0;
+  font-size: 1.25rem;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #e74c3c;
+  margin-right: 5px;
+}
+
+.discounted-price {
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.current-price {
+  font-weight: bold;
+  color: #3498db; /* Example color for current price */
+}
+
+/* Button styling */
+.product-card button {
+  background: #3498db;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.product-card button:hover {
+  background: #2980b9;
+  transform: scale(1.05); /* Slight scale-up effect */
+}
+
+/* Hover effect for the card */
+.product-card:hover {
+  transform: scale(1.05); /* Slight scale-up effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}

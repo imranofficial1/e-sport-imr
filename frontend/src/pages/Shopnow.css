@@ -1,0 +1,114 @@
+
+
+.show-now-container {
+    padding: 20px;
+    background-color: #f0f2f5;
+    text-align: center;
+  }
+  
+  .show-now-container h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 0 10px;
+  }
+  
+  .product-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 10px;
+    position: relative;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .product-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .product-description {
+    font-size: 0.875rem;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .product-rating {
+    color: #f39c12;
+    font-size: 0.875rem;
+    margin-bottom: 10px;
+  }
+  
+  .product-cost {
+    font-size: 1.25rem;
+    color: #e74c3c;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .btn-add-to-cart, .btn-buy-now {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .btn-add-to-cart {
+    background-color: #27ae60;
+  }
+  
+  .btn-add-to-cart:hover {
+    background-color: #219150;
+    transform: scale(1.05);
+  }
+  
+  .btn-buy-now {
+    background-color: #3498db;
+    margin-left: 10px;
+  }
+  
+  .btn-buy-now:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .products-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .product-card {
+      max-width: 100%;
+    }
+  }
+  

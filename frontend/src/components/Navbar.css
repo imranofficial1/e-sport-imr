@@ -1,0 +1,46 @@
+/* Navbar.css */
+.navbar {
+  display: flex; /* Use flexbox for easy alignment */
+  justify-content: space-between; /* Space items evenly */
+  align-items: center; /* Center items vertically */
+  background-color: #232f3e; /* Dark background like Amazon */
+  color: white;
+  padding: 10px 20px; /* Add some padding */
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-items {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px 0 0 3px; /* Rounded left corners */
+  margin-right: -1px; /* Remove gap between input and button */
+}
+
+.search-button {
+  padding: 8px 12px;
+  background-color: #f0c14b; /* Amazon yellow */
+  border: 1px solid #a88734;
+  border-radius: 0 3px 3px 0; /* Rounded right corners */
+  color: #111;
+  cursor: pointer;
+}
+
+.navbar-button {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+/* Amazon-like "All" dropdown */
+.hm-icon-label {
+  margin-right: 5px; /* Add some space */
+}
